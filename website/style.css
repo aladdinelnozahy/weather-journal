@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background:url('media/wp2035103.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* text-align: center; */
+    color: rgb(233, 233, 230);
+    font-family: 'Ranchers', cursive;   
+    letter-spacing: 2px;
+    padding: 20px;
+}
+.entry{
+    background:  #68696967;
+    border: solid   1px rgb(111, 135 ,185);
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.719)
+}
+.in{
+    padding: 0px 100px 0px 100px;
+}
+.card{
+    background-color: rgba(12, 29, 37, 0.685);
+    border: solid 5px rgb(111, 135 ,185); 
+    border-radius: 50px;
+    /* width: 70%; */
+    /* display: table; */
+    margin: auto;
+    text-align: center;
+
+
+}
+.center{
+    /* justify-content: center; */
+    text-align: center;
+    /* width: 70%; */
+} 
+hr{
+    height: 2px;
+    border:solid  rgb(111, 135 ,185) 1px;
+    border-radius:5px ;
+    background-color:rgb(87, 135, 240);
+    width: 55%;
+    margin: auto;
+}
+.zip{
+    /* border: solid 2px white ; */
+    padding: 10px;
+}
+i{
+    color: rgba(255, 255, 0, 0.76);
+}
+.myInput{
+    border: solid   1px rgb(111, 135 ,185);
+    border-radius: 40px;
+    background:#68696967;
+    /* font-size: 20px; */
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: wheat;
+    margin:10px;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #fcfcfce8; 
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 20px;
+} 
+.holder{
+    /* font-size: 25px; */
+    margin: 10px;
+}
+#generate{
+    
+    background-color:rgb(8 14 33);
+    border:solid 3px rgb(111 135 185); 
+    border-radius: 50px;
+    color: white;
+    /* padding: 15px 32px; */
+    text-align: center;
+    display: inline-block;
+    /* font-size: 16px; */
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+    
+  
