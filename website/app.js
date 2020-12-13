@@ -1,5 +1,6 @@
 /* Global Variables */
-const APIKey = '6f469cb97a99cca85406df3427d46c91';
+const APIKey = '6f469cb97a99cca85406df3427d46c91&units=metric';
+
 const APIBaseURL = 'http://api.openweathermap.org/data/2.5/weather?APIKEY='+APIKey+'&zip=';
 //http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=6f469cb97a99cca85406df3427d46c91\
 
