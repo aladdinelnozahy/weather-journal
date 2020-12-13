@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 
 // Setup empty JS object to act as endpoint for all routes
-const projectData = [];
+const projectData = {};
 
 const app = express();
 
@@ -33,19 +33,20 @@ function running () {
 app.get('/all', getData)
 function getData (req, res) {
     res.send(projectData);
-    console.log(projectData)
+    console.log(projectData);
   };
   
 //post route 
 app.post('/post',postData)
 function postData (req,res){
-    console.log(req.body);
+    console.log('request body =',req);
     newData = {
         date: req.body.date,    
         temp: req.body.temp,
         response: req.body.content
     }
-    projectData.push(newData)
+    
+    Object.assign(projectData,newData)
     
 }
 

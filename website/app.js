@@ -18,14 +18,15 @@ function clickAction(e){
 
   .then(function(data){
     // Add data
-    //console.log(data);
+    console.log(data);
     postData('/post', {date:newDate, temp: data.main.temp, content:userFeeling} );
 
   //  postData('/post', {date:d, coord: data.coord, weather: data.weather[0], content:userFeeling} );
   })
-  .then(
+  .then(function(){
     updateUI()
-  )
+    })
+
 }
 //get data func
 const getWeather = async(APIBaseURL , zipCode )=>{
@@ -50,7 +51,7 @@ const postData =async(url='',data={})=>{
     });
     try{
         const newData= await response.json();
-        //console.log(newData);
+        console.log(newData);
         return newData
     }catch(error){
         console.log("error",error);
@@ -63,9 +64,9 @@ const updateUI = async () => {
     try{
       const allData = await request.json();
       console.log(allData);
-      document.getElementById('date').innerHTML =`Date: ${allData[0].date}` ;
-      document.getElementById('temp').innerHTML = `Temp: ${allData[0].temp}` ;
-      document.getElementById('content').innerHTML = `Feel: ${allData[0].response}` ;
+      document.getElementById('date').innerHTML =`Date: ${allData.date}` ;
+      document.getElementById('temp').innerHTML = `Temp: ${allData.temp}` ;
+      document.getElementById('content').innerHTML = `Feel: ${allData.response}` ;
 
     }catch(error){
       console.log("error", error);
